@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import google from '../assets/google.png';
 import twitter from '../assets/X.png';
