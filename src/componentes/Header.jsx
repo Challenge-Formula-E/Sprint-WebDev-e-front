@@ -2,7 +2,7 @@ import logo from '../assets/logo.png';
 import '../styles/header.css';
 import { Link } from 'react-router-dom';
 
-export const Header = ({ className}) => {
+export const Header = () => {
     return (
       <div className="header">
         <div className="rectangle-2"></div>
@@ -11,8 +11,8 @@ export const Header = ({ className}) => {
           <Link to='/' className="nav-item home" >Home</Link>
           <Link to='/races' className="nav-item races">Races</Link>
           <Link to='/about' className="nav-item about">About</Link>
-          <Link to='/about' className="nav-item coins">E-Coins</Link>
-          <Link to='/about' className="nav-item news">News</Link>
+          <Link to='/coins' className="nav-item coins">E-Coins</Link>
+          <Link to='/news' className="nav-item news">News</Link>
         </nav>
       </div>
 
