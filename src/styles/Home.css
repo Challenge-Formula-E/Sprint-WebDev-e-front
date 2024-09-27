@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Secular+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    min-width: 100%;
+    margin: 0 auto; 
+    padding: 25px;
+    background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
+}
+
+.section {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Fundo semi-transparente para dar destaque sem atrapalhar o layout */
+}
+.topo {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.topo .logo {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+}
+
+.section p {
+    font-size: 30px;
+    color: #ccc;
+    font-family:'Poppins', sans-serif;
+   
+
+}
+
+.freshness {
+    background: url('../assets/ecoins.png') no-repeat center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 60px;
+    mask-image: linear-gradient( to right, transparent, black);
+
+}
+
+
+.corridas {
+    background: url('../assets//monaco.png') no-repeat center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    mask-image: linear-gradient( to left, transparent, black);
+    font-size: 60px;
+}
+
+.noticias {
+    background: url('../assets/news.png') no-repeat center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 60px;
+    mask-image: linear-gradient( to righttransparent, black);
+}
+
+.mais {
+    background: url('../assets/about.png') no-repeat center;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 60px;
+    mask-image: linear-gradient( to left, transparent, black);
+}
+
+.highlights {
+    background: url('#') no-repeat center;
+    background-size: cover;
+}
+
+/* Evitar sobreposição com header e footer */
+header, footer {
+    z-index: 1000; 
+    position: relative; 
+    background-color: transparent; 
+}
