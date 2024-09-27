@@ -1,5 +1,4 @@
 // Footer.js
-import React from "react";
 import "../styles/Footer.css"; 
 import FundoFooter from "../assets/FundoFooter.png";
 import fiap from '../assets/fiap.png';
@@ -8,7 +7,7 @@ import techmahindra from '../assets/techmahindra.png'
 import fia from '../assets/fia.png'
 
 
-export const Footer = ({ className = "", ...props }) => {
+export const Footer = ({ className = "" }) => {
 
  
   return (
