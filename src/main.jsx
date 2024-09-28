@@ -11,7 +11,7 @@ import News from './pages/News.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: 'Sprint-WebDev-e-front/',
     element: <App />,
     children: [
       {
@@ -19,19 +19,19 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/coins',
+        path: 'coins',
         element: <Coins />
       },
       {
-        path: '/races',
+        path: 'races',
         element: <Races />,
       },
       {
-        path: '/about',
+        path: 'about',
         element: <About />,
       },
       {
-        path: '/news',
+        path: 'news',
         element: <News />,
       },
     ],
