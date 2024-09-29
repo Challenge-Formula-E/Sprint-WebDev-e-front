@@ -3,14 +3,20 @@ import google from '../assets/google.png';
 import twitter from '../assets/X.png';
 import tiktok from '../assets/tiktok.png';
 import instagram from '../assets/instagram.png';
-import face from '../assets/face.png'
-import '../assets/FundoLogin.png'
+import face from '../assets/face.png';
+import { useNavigate } from "react-router-dom";
+import { useUser } from '../hooks/useUser';
+import '../assets/FundoLogin.png';
 
 const LoginScreen = () => {
   const { register, handleSubmit } = useForm();
+  const { logIn } = useUser();
+  const navigate = useNavigate();
+
 
   const onSubmit = data => {
-    // Handle form submission
+    logIn(data);
+    navigate('/');
     console.log(data);
   };
 
