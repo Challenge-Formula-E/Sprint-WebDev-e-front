@@ -13,7 +13,7 @@ import { ProtectedRoute } from './componentes/ProtectedRoute.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: 'Sprint-WebDev-e-front/',
     element: <App />,
     children: [
       {
@@ -21,20 +21,21 @@ const router = createBrowserRouter([
         element: <ProtectedRoute><Home /></ProtectedRoute>
       },
       {
-        path: '/coins',
+        path: 'coins',
         element: <ProtectedRoute><Coins /></ProtectedRoute>
       },
       {
-        path: '/races',
+        path: 'races',
         element: <ProtectedRoute><Races /></ProtectedRoute>,
       },
       {
-        path: '/about',
+        path: 'about',
         element: <ProtectedRoute><About /></ProtectedRoute>,
       },
       {
-        path: '/news',
+        path: 'news',
         element: <ProtectedRoute><News />,</ProtectedRoute>
+
       },
       {
         path: '/login',
