@@ -1,13 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Races from './pages/Races.jsx'
-import Home from './pages/Home.jsx'
-import Coins from './pages/Coins.jsx'
-import About from './pages/About.jsx'
-import News from './pages/News.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Races from './pages/Races.jsx';
+import Home from './pages/Home.jsx';
+import Coins from './pages/Coins.jsx';
+import About from './pages/About.jsx';
+import News from './pages/News.jsx';
+import Login from './pages/Login.jsx';
+import { ProtectedRoute } from './componentes/ProtectedRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,24 +18,28 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <ProtectedRoute><Home /></ProtectedRoute>
       },
       {
         path: '/coins',
-        element: <Coins />
+        element: <ProtectedRoute><Coins /></ProtectedRoute>
       },
       {
         path: '/races',
-        element: <Races />,
+        element: <ProtectedRoute><Races /></ProtectedRoute>,
       },
       {
         path: '/about',
-        element: <About />,
+        element: <ProtectedRoute><About /></ProtectedRoute>,
       },
       {
         path: '/news',
-        element: <News />,
+        element: <ProtectedRoute><News />,</ProtectedRoute>
       },
+      {
+        path: '/login',
+        element: <Login />
+      }
     ],
   },
   {
