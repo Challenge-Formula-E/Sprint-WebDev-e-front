@@ -2,132 +2,135 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #000;
-    color: white;
-    width: 100vw;
-    overflow-x: hidden;
+  background-color: #000;
+  color: white;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
-    min-width: 100%;
-    margin: 0 auto; 
-    padding: 25px;
-    background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
 }
 
 .section {
-    margin-bottom: 30px;
-    text-align: center;
-    display: flex;
-    min-height: 300px;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    /* Fundo semi-transparente para dar destaque sem atrapalhar o layout */
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Fundo semi-transparente para dar destaque sem atrapalhar o layout */
 }
+
 .topo {
-    text-align: center;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
 }
 
 .topo .logo {
-    align-items: center;
-    margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 
 
 
 h1 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
 }
 
 h2 {
-    font-size: 60px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-family: 'Righteous', cursive;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
 }
 
 .section p {
-    font-size: 30px;
-    color: #ccc;
-    font-family:'Poppins', sans-serif;
-     ;
-   
+  font-size: 30px;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+  ;
+
 
 }
 
 .freshness {
-    background: url('../assets/ecoins.png') no-repeat center;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: end;
-    font-size: 60px;
-    mask-image: linear-gradient( to right, transparent, black);
+  background: url('../assets/ecoins.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 60px;
+  mask-image: linear-gradient(to right, transparent, black);
 
 }
 
 
 .corridas {
-    background: url('../assets//monaco.png') no-repeat center;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    mask-image: linear-gradient( to left, transparent, black);
-    font-size: 60px;
+  background: url('../assets//monaco.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  mask-image: linear-gradient(to left, transparent, black);
+  font-size: 60px;
 }
 
 .noticias {
-    background: url('../assets/news.png') no-repeat center;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: end;
-    font-size: 60px;
-    mask-image: linear-gradient( to righttransparent, black);
+  background: url('../assets/news.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 60px;
+  mask-image: linear-gradient(to righttransparent, black);
 }
 
 .mais {
-    background: url('../assets/about.png') no-repeat center;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 60px;
-    mask-image: linear-gradient( to left, transparent, black);
+  background: url('../assets/about.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 60px;
+  mask-image: linear-gradient(to left, transparent, black);
 }
 
 .highlights {
-    background: url('#') no-repeat center;
-    background-size: cover;
+  background: url('#') no-repeat center;
+  background-size: cover;
 }
 
 /* Evitar sobreposição com header e footer */
-header, footer {
-    z-index: 1000; 
-    position: relative; 
-    background-color: transparent; 
+header,
+footer {
+  z-index: 1000;
+  position: relative;
+  background-color: transparent;
 }
+
 .footer,
 .footer * {
   box-sizing: border-box;
@@ -140,7 +143,7 @@ header, footer {
   border-style: solid;
   border-width: 1px;
   border: none;
-  height: auto; 
+  height: auto;
   padding: 20px 0;
   overflow: hidden;
   z-index: -2;
@@ -148,36 +151,36 @@ header, footer {
 
 
 .footer .Fundo {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; 
-  object-fit: cover; 
+  z-index: -1;
+  object-fit: cover;
 }
 
 .footer .logos {
   display: flex;
-  justify-content: center; 
-  gap: 60px; 
+  justify-content: center;
+  gap: 60px;
   align-items: center;
-  width: 100%; 
-  max-width: 1000px; 
+  width: 100%;
+  max-width: 1000px;
   margin: 20px 0;
-  padding: 0 50%; 
-  z-index: 1; 
+  padding: 0 50%;
+  z-index: 1;
 }
 
 .footer .fia,
 .footer .formulae,
 .footer .techmahindra,
 .footer .fiap {
-  width: 8vw; 
+  width: 8vw;
   max-width: 120px;
   height: auto;
-  
-  
+
+
 }
 
 .footer .todos-os-direitos-reservados-2024 {
@@ -187,11 +190,12 @@ header, footer {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 10px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
+
   .footer .fia,
   .footer .formulae,
   .footer .techmahindra,
@@ -206,6 +210,7 @@ header, footer {
 }
 
 @media (max-width: 480px) {
+
   .footer .fia,
   .footer .formulae,
   .footer .techmahindra,

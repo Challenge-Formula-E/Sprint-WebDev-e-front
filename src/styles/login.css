@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Secular+One&display=swap');
 
 .BackgroundImage {
-    background-image: url('../assets/backgroundlogin.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+  background-image: url('../assets/backgroundlogin.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Login-text {
+  color: rgb(98, 98, 245);
+}

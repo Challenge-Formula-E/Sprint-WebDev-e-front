@@ -1,21 +1,23 @@
 @media (min-width: 768px) {
-    .slick-center {
-        margin: auto 2rem;
-        transform: scale(1.2); /* Aumenta o slide central */
-        transition: transform 0.3s ease-in-out;
-        z-index: 1; /* Eleva o slide para sobrepor os outros */
-      }
-}
-  
-  .slick-slide {
+  .slick-center {
+    margin: auto 2rem;
+    transform: scale(1.2);
+    /* Aumenta o slide central */
     transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    /* Eleva o slide para sobrepor os outros */
   }
-  
-.slick-list{
-    height: 100%;
-    padding-top: 5rem !important;
 }
-  
+
+.slick-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-list {
+  height: 100%;
+  padding-top: 5rem !important;
+}
+
 .slick-slider {
-    height: 32rem;
+  height: 32rem;
 }
