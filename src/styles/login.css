@@ -3,8 +3,7 @@
 .BackgroundImage {
     background-image: url('../assets/backgroundlogin.png');
     background-position: center center;
-    background-size: 1880px;
-    
-    
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
