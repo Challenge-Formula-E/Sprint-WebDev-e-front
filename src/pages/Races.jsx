@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { LuPlay, LuClock, LuCloudSun, LuCalendarDays } from "react-icons/lu";
 import { BiShare } from "react-icons/bi";
 import "slick-carousel/slick/slick.css";
