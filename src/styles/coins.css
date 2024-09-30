@@ -1,70 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Secular+One&display=swap');
+
+
 .profile-container {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
-    max-width: 600px;
+    width: 100%;
     margin: auto;
+    
+  }
+  .back-profile{
+    background-image: url('../assets/Fundoprofile.png');
+    border-bottom: solid 1px #ccc;
   }
   
   .profile-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
+    justify-content: space-between; /* Deixa os elementos espaçados (esquerda e direita) */
+    align-items: center; /* Alinha verticalmente os itens */
+    border-bottom: 1px solid #ccc ;
     padding-bottom: 10px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-icon {
-    width: 50px;
-    height: 50px;
+    height: 100px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.user-info {
+    display: flex; /* Adiciona flex aqui para juntar o ícone e o nome do usuário */
+    align-items: center; 
+    margin-left: 50px;/* Alinha o ícone e o nome verticalmente */
+}
+
+.user-icon {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: #ccc;
-    margin-right: 10px;
-  }
-  
-  .leave-button {
-    background-color: #ff4d4d;
+    background-image: url("../assets/user.png");
+    background-size: cover;
+    margin-right: 10px; /* Espaço entre o ícone e o nome */
+}
+
+.user-name {
+    font-size: 2vw;
+    font-family: 'Righteous',cursive;
+    /* Removi justify-content: flex-start pois não é necessário */
+}
+
+.leave-button {
+    background: linear-gradient(to left, #011afe, #0084fe 50%, #01adfd 75%, #01cafe 100%);
     color: white;
-    border: white;
-    padding: 5px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 25px;
     cursor: pointer;
-  }
+    font-family: 'Righteous', cursive;
+    /* Removi justify-content: flex-end pois o `space-between` no contêiner já cuida disso */
+}
+
+  /*-------------------------------------------------*/
   
   .social-media {
     margin: 20px 0;
+    padding-left: 60px; /* Adiciona espaço à esquerda do contêiner */
   }
   
   .social-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Mantém os itens nas extremidades */
     align-items: center;
     margin-bottom: 10px;
+    /* O padding-left foi removido para não adicionar espaço extra aqui */
+    padding-right: 60px;
+  }
+  
+  .social-plataform {
+    display: flex; /* Alinha o ícone e os textos em linha */
+    align-items: flex-start; /* Alinha os itens no topo */
+  }
+  
+  .conect {
+    margin-left: 10px; /* Espaço entre o ícone e o texto */
+    font-family:'Poppins', sans-serif ;
+  }
+
+  .social-connected{
+    font-family:'Poppins', sans-serif ;
+    font-style: italic;
   }
   
   .social-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 0px;
+  
+    /* Ajuste da imagem de fundo para caber no contêiner */
+    background-size: contain; /* Faz com que a imagem caiba dentro do círculo */
+    background-position: center; /* Centraliza a imagem no círculo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+  }
+
+  .social-posts{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
   }
   
   .tiktok {
-    background-color: #69c9d0;
+    background-image: url('../assets/tiktok.png');
   }
   
   .facebook {
-    background-color: #3b5998;
+    background-image: url('../assets/face.png');
   }
   
   .instagram {
-    background-color: #e4405f;
+    background-image: url('../assets/instacolorido.png');
   }
   
+  .twitter {
+    background-image: url('../assets/xcolorido.png');
+  }
+  
+  .social-email {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .social-connected {
+    margin-top: 2px; /* Adiciona um pequeno espaço acima do texto CONNECTED */
+  }
+  
+  .social-posts {
+    margin-left: auto; /* Empurra os posts para a direita */
+  }
+  
+/*-------------------------------------------------*/
   .stats {
     display: flex;
     justify-content: space-between;
