@@ -6,6 +6,7 @@
     padding: 20px;
     width: 100%;
     margin: auto;
+    background: linear-gradient(to bottom, #000 51%, #111 60%, #091587 70%, #0518C3 83%, #011AFE 88%);
     
   }
   .back-profile{
@@ -15,8 +16,8 @@
   
   .profile-header {
     display: flex;
-    justify-content: space-between; /* Deixa os elementos espaçados (esquerda e direita) */
-    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; 
+    align-items: center; 
     border-bottom: 1px solid #ccc ;
     padding-bottom: 10px;
     height: 100px;
@@ -25,9 +26,9 @@
 }
 
 .user-info {
-    display: flex; /* Adiciona flex aqui para juntar o ícone e o nome do usuário */
+    display: flex; 
     align-items: center; 
-    margin-left: 50px;/* Alinha o ícone e o nome verticalmente */
+    margin-left: 50px;
 }
 
 .user-icon {
@@ -36,13 +37,13 @@
     border-radius: 50%;
     background-image: url("../assets/user.png");
     background-size: cover;
-    margin-right: 10px; /* Espaço entre o ícone e o nome */
+    margin-right: 10px; 
 }
 
 .user-name {
     font-size: 2vw;
     font-family: 'Righteous',cursive;
-    /* Removi justify-content: flex-start pois não é necessário */
+    
 }
 
 .leave-button {
@@ -53,32 +54,31 @@
     padding: 5px 25px;
     cursor: pointer;
     font-family: 'Righteous', cursive;
-    /* Removi justify-content: flex-end pois o `space-between` no contêiner já cuida disso */
+    
 }
 
   /*-------------------------------------------------*/
   
   .social-media {
     margin: 20px 0;
-    padding-left: 60px; /* Adiciona espaço à esquerda do contêiner */
+    padding-left: 60px; 
   }
   
   .social-item {
     display: flex;
-    justify-content: space-between; /* Mantém os itens nas extremidades */
+    justify-content: space-between; 
     align-items: center;
     margin-bottom: 10px;
-    /* O padding-left foi removido para não adicionar espaço extra aqui */
     padding-right: 60px;
   }
   
   .social-plataform {
-    display: flex; /* Alinha o ícone e os textos em linha */
-    align-items: flex-start; /* Alinha os itens no topo */
+    display: flex; 
+    align-items: flex-start; 
   }
   
   .conect {
-    margin-left: 10px; /* Espaço entre o ícone e o texto */
+    margin-left: 10px; 
     font-family:'Poppins', sans-serif ;
   }
 
@@ -93,10 +93,10 @@
     border-radius: 50%;
     margin-right: 0px;
   
-    /* Ajuste da imagem de fundo para caber no contêiner */
-    background-size: contain; /* Faz com que a imagem caiba dentro do círculo */
-    background-position: center; /* Centraliza a imagem no círculo */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
 
   .social-posts{
@@ -125,34 +125,141 @@
   }
   
   .social-connected {
-    margin-top: 2px; /* Adiciona um pequeno espaço acima do texto CONNECTED */
+    margin-top: 2px; 
   }
   
   .social-posts {
-    margin-left: auto; /* Empurra os posts para a direita */
+    margin-left: auto; 
   }
   
-/*-------------------------------------------------*/
-  .stats {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-  }
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+.stats {
   
-  .e-coins, .current-rank {
-    text-align: center;
-  }
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 20px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+   
+}
+
+.e-coins, .current-rank {
+  background-image: url('../assets/Fundocoin.png');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  color: #fff;
+  border-radius: 10px;
+  padding: 60px; 
+  width: 48%; 
+  max-width: 600px; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; 
+}
+
+.coin-icon, .rank-icon {
+  width: 50px; 
+  height: auto; 
+  object-fit: contain; 
+  margin-right: 20px;
+}
+
+.coin-icon {
+  /* corrigir imagens !!!! */
+  margin-right: 20px;
+  justify-content: start;
+}
+
+.rank-icon {
+/* corrigir imagens !!!! */
+  margin-left: 20px;
+}
+
+.coin-count, .rank-number {
+  font-size: 40px; /* Ajusta o tamanho do texto */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.e-coins p, .current-rank p {
+  font-size: 14px; /* Diminui o tamanho do texto */
+  margin: 5px 0;
+}
+
+.rank-text, .coin-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-size:20px;
+}
+
+.sub2{
+  font-weight: 800;
+}
+
+.e-coins-container {
+  margin-top: 200px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 600px;
+  background-image: url('../assets/fundomoedas.png');
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ccc;
+
   
-  .coin-icon, .rank-icon {
-    font-size: 2em;
-  }
+}
+
+.image-placeholder {
+  width: 100%; /* Para centralizar a imagem */
+  margin: 0 auto 20px; /* Centraliza e adiciona margem embaixo */
+}
+
+.image-placeholder img {
+
+  width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.exchange-title {
+  font-size: 1.8em;
+  margin-bottom: 15px;
   
-  .profile-footer {
-    text-align: center;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    position: flex;
-  }
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.5; /* Melhor legibilidade */
+}
+
+
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+  
+ 
   
   @media (max-width: 600px) {
     .stats {
