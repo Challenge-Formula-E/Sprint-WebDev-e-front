@@ -8,8 +8,10 @@ import Home from './pages/Home.jsx';
 import Coins from './pages/Coins.jsx';
 import About from './pages/About.jsx';
 import News from './pages/News.jsx';
-import Login from './pages/Login.jsx';
+import Login from './pages/login.jsx';
 import { ProtectedRoute } from './componentes/ProtectedRoute.jsx';
+
+
 
 const router = createBrowserRouter([
   {
