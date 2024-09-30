@@ -27,13 +27,18 @@ const LoginScreen = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" id="email" {...register('email')} placeholder="Email@123.com"
-                   className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
+            <input
+  type="email"
+  id="email"
+  {...register('email')}
+  placeholder="Email@123.com"
+  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+  style={{ color: 'black' }}/>
           </div>
           <div className="mb-4">
             <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
             <input type="password" id="password" {...register('password')} placeholder="Password123."
-                   className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
+                   className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 "style={{ color: 'black' }}/>
           </div>
           <div className="mb-4 text-right">
             <a href="#" className="text-sm text-blue-600 hover:underline">forgot password?</a>
