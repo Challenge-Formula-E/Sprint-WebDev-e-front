@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import VideoComponent from "../componentes/Videocomponet";
 
 
 function Home() {
@@ -41,6 +42,11 @@ function Home() {
       <section className="section highlights">
         <h2>Highlights</h2>
         <p>Race Cut</p>
+
+        <VideoComponent
+        />
+
+        
       </section>
     </div>
   );
