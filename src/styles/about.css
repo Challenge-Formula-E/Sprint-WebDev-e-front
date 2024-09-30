@@ -1,69 +1,125 @@
-.news-page {
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
+body {
+    background: linear-gradient(to bottom, #000 61%, #1f45ad 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
   }
   
-  h2 {
-    margin-top: 95px;
-  }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   
-  .titulo {
-    background-image: url(../assets/fundomoedas.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
+    } 
   
   
-  .noticia-section {
-      display: flex;
-      flex-direction: row-reverse;
-      margin-right: 100px;
-      margin-left: 100px;
-  }
-  .noticia {
-      margin-left: 70px;
-      text-justify: inherit;
-      text-align: initial;
-  }
+    .about-section,
+    .benefits-section,
+    .history-section {
+      margin-bottom: 40px;
+    }
   
-  
-  .womans-day{
-  text-align: justify;
-  }
-  .calendar-races{
-  text-align: justify;
-  }
-  
-  .piloto {
-      width: 100%;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/piloto.png);
-      background-position: center;
-  }
-  
-  @media (min-width: 768px) {
-      .news-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-      }
-  
-      .news-section .image-container {
-        flex: 1;
-      }
-  
-      .news-section p {
-        flex: 1;
-      }
-  }
-  
-  .p-meio {
+  .benefits-section {
     display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
+    flex-direction: row-reverse;
+    }
+  
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #d3d3d3;
+    }
+  
+    .image-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .image-container img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  
+    .about-section {
+      display: flex;
+      margin-right: 100px;
+      margin-left: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+      .history-section {
+        text-align: center;
+      }
+  
+  
+    .about-moedas {
+      margin-left: 70px;
+    }
+  
+    .titulo {
+      font-size: 3.5rem;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      background-image: url(../assets/fundomoedas.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  
+    .benefits {
+      display: flex;
+      justify-content: end;
+      margin-right: 300px;
+    }
+  
+    .carromahindra {
+   
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-image: url(../assets/carro.png);
+        background-position: center;
+  
+    }
+  
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+  
+      .header p {
+        font-size: 1rem;
+      }
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+  
+      p {
+        font-size: 1rem;
+        margin: 100px;
+      }
+  
+      .texto {
+        margin-right: 100px;
+  
+      }
+  
+  
+      .image-container img {
+        max-width: 100%;
+      }
+    }
