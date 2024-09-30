@@ -1,3 +1,4 @@
+import '../styles/login.css'
 import { useForm } from 'react-hook-form';
 import google from '../assets/google.png';
 import twitter from '../assets/X.png';
@@ -6,7 +7,8 @@ import instagram from '../assets/instagram.png';
 import face from '../assets/face.png';
 import { useNavigate } from "react-router-dom";
 import { useUser } from '../hooks/useUser';
-import '../assets/FundoLogin.png';
+import BackgroundImage from '../assets/backgroundlogin.png'
+import { Header } from '../componentes/HeaderLogin';
 
 const LoginScreen = () => {
   const { register, handleSubmit } = useForm();
@@ -21,9 +23,16 @@ const LoginScreen = () => {
   };
 
   return (
-    <div className="bg-[url] min-h-screen bg-cover flex items-center justify-center ">
+    <div className="BackgroundImage" style={{ backgroundImage: `url(${BackgroundImage})` }}>
+<header className="Header"> 
+  <div>
+    <img src="" alt="" />
+  </div>
+</header>
+    
+    <div className=" bg-[url] min-h-screen bg-cover flex items-center justify-center ">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full md:max-w-lg">
-        <h2 className="text-xl font-bold text-center mb-4">LOGIN</h2>
+        <h2 className="text-xl font-bold text-center mb-4 text-black">LOGIN</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -43,7 +52,8 @@ const LoginScreen = () => {
           <div className="mb-4 text-right">
             <a href="#" className="text-sm text-blue-600 hover:underline">forgot password?</a>
           </div>
-          <button  href="./Home.jsx"type="submit" className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Next </button>
+          
+          <button  href="./Home.jsx"type="submit" className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Next</button>
         </form>
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">Login with</p>
@@ -60,6 +70,10 @@ const LoginScreen = () => {
         <button className="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300">SIGN-IN</button>
         <button className="bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300">SIGN-UP</button>
       </div>
+    <header classname="header">
+
+    </header>
+    </div>
     </div>
   );
 };
