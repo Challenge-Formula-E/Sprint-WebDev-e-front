@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
     return (
-      <div className="header rectangle-2">
-        <img className="logo" src={logo} alt="Logo" />
+      <div className="header rectangle-2 w-[110vw] md:w-[100%]">
+        <img className="logo w-[100px] md:w-[270px]" src={logo} alt="Logo"  />
         <nav className="nav-items">
           <NavLink to='/' className="nav-item home" >Home</NavLink>
           <NavLink to='races' className="nav-item races">Races</NavLink>

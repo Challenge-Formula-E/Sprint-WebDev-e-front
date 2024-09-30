@@ -6,7 +6,7 @@ import VideoComponent from "../componentes/Videocomponet";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="container w-[100vw] md:w-full">
       <section className="topo">
         <img src={logo} alt="Formula E Logo" className="logo" />
         <h1>Track revolution with a touch of electricity</h1>
@@ -46,7 +46,7 @@ function Home() {
         <VideoComponent
         />
 
-        
+
       </section>
     </div>
   );

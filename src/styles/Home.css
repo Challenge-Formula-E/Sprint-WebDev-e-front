@@ -13,6 +13,7 @@ body {
   color: white;
   width: 100vw;
   overflow-x: hidden;
+  
 }
 
 .container {
@@ -193,7 +194,7 @@ footer {
   z-index: 1;
 }
 
-/* Media Queries para telas menores */
+  /* Media Queries para telas menores  */
 @media (max-width: 768px) {
 
   .footer .fia,
@@ -222,4 +223,9 @@ footer {
   .footer .todos-os-direitos-reservados-2024 {
     font-size: 0.9rem;
   }
+
+  body{
+    width: 170vw;
+  }
+
 }
