@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Secular+One&display=swap');
 
 .header,
@@ -65,5 +66,48 @@
 
   .header .nav-item {
     font-size: 6vw; 
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Layout para dispositivos móveis */
+@media (max-width: 768px) {
+  .nav-items {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, rgba(1, 26, 254, 1) 0%, rgba(0, 132, 254, 1) 100%);
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav-items.open {
+    height: 80%; /* Ajuste a altura conforme necessário */
+    z-index: 99999;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
