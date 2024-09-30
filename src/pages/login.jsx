@@ -15,9 +15,13 @@ const LoginScreen = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    console.log(logIn(data));
-    navigate("/Sprint-WebDev-e-front/");
-  };
+    const loggedIn = logIn(data); // Chama o logIn e verifica o retorno
+    if (loggedIn) {
+      navigate("/"); // Redireciona se o login for bem-sucedido
+    } else {
+      console.log("Login failed");
+    }
+  }
 
   return (
     <div

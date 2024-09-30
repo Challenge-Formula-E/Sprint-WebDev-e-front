@@ -15,42 +15,44 @@ import { ProtectedRoute } from './componentes/ProtectedRoute.jsx';
 
 const router = createBrowserRouter([
   {
-    path: 'Sprint-WebDev-e-front/',
-    element: <App />,
+    path: '/',
+    element: <ProtectedRoute><App /></ProtectedRoute>,
     children: [
       {
         index: true,
-        element: <ProtectedRoute><Home /></ProtectedRoute>
+        element: <Home />
       },
       {
         path: 'coins',
-        element: <ProtectedRoute><Coins /></ProtectedRoute>
+        element: <Coins />
       },
       {
         path: 'races',
-        element: <ProtectedRoute><Races /></ProtectedRoute>,
+        element: <Races />,
       },
       {
         path: 'about',
-        element: <ProtectedRoute><About /></ProtectedRoute>,
+        element: <About />,
       },
       {
         path: 'news',
-        element: <ProtectedRoute><News />,</ProtectedRoute>
-
+        element: <News />,
       },
-
     ],
   },
   {
-    path: 'Sprint-WebDev-e-front/login',
+    path: 'login',
     element: <Login />
   },
   {
     path: '*',
     element: <h1>Página não encontrada</h1>
   }
-])
+],
+{
+  basename: '/Sprint-WebDev-e-front'
+}
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

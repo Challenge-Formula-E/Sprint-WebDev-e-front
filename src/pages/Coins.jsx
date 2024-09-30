@@ -4,8 +4,11 @@ import "../assets/fundomoedas.png"
 import moeda from '../assets/moeda.png'
 import impressions from '../assets/impressions.png'
 import Carroselboxes from '../componentes/Carroselboxes'
+import { useUser } from '../hooks/useUser'
 
 function Coins() {
+  const { logOut } = useUser();
+
   return (
     <div className="profile-container">
       <div className='back-profile'>
@@ -14,7 +17,7 @@ function Coins() {
             <div className="user-icon" style={{backgroundImage: `url(${user})`}}></div>
             <h1 className='user-name'>HELLO, STEVE!</h1>
           </div>
-            <button className="leave-button">leave</button>
+            <button onClick={logOut} className="leave-button">leave</button>
           
         </header>
 
@@ -106,7 +109,7 @@ function Coins() {
             <h2 className="exchange-title">Exchange your E-coins for one of the prizes in your rank</h2>
             <p className="description">
                 E-coins are virtual currencies accumulated by users based on the number of views their published videos receive. 
-                Each view contributes to the content creator's E-coin balance, encouraging the production and sharing of popular 
+                Each view contributes to the content creator&apos;s E-coin balance, encouraging the production and sharing of popular 
                 videos about Formula E. These coins can be exchanged for prizes, offering a tangible reward for the engagement 
                 and success of the videos. The E-coin system not only motivates users to create quality content but also 
                 promotes a more active and engaged community on the platform.
