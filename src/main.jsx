@@ -37,14 +37,12 @@ const router = createBrowserRouter([
         element: <ProtectedRoute><News />,</ProtectedRoute>
 
       },
-      {
-        path: '/login',
-        element: <Login />
-      }
+
     ],
   },
   {
-    /* ADICIONA LOGIN E CADASTRO AQ PRA N TER HEADER E FOOTER */  
+    path: 'Sprint-WebDev-e-front/login',
+    element: <Login />
   },
   {
     path: '*',

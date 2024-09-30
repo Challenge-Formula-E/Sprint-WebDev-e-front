@@ -8,7 +8,7 @@ export const ProtectedRoute = ({ children }) => {
 
     useEffect(() => {
         if(!isLogged) {
-            navigate('/login');
+            navigate('Sprint-WebDev-e-front/login');
         }
     }, []);
 

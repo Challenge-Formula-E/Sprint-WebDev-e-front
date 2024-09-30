@@ -16,7 +16,7 @@ const LoginScreen = () => {
 
   const onSubmit = data => {
     logIn(data);
-    navigate('/');
+    navigate('/Sprint-WebDev-e-front/');
     console.log(data);
   };
 
