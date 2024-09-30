@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Secular+One&display=swap');
+
+
+.profile-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom, #000 51%, #111 60%, #091587 70%, #0518C3 83%, #011AFE 88%);
+    
+  }
+  .back-profile{
+    background-image: url('../assets/Fundoprofile.png');
+    border-bottom: solid 1px #ccc;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid #ccc ;
+    padding-bottom: 10px;
+    height: 100px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.user-info {
+    display: flex; 
+    align-items: center; 
+    margin-left: 50px;
+}
+
+.user-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("../assets/user.png");
+    background-size: cover;
+    margin-right: 10px; 
+}
+
+.user-name {
+    font-size: 2vw;
+    font-family: 'Righteous',cursive;
+    
+}
+
+.leave-button {
+    background: linear-gradient(to left, #011afe, #0084fe 50%, #01adfd 75%, #01cafe 100%);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    
+}
+
+  /*-------------------------------------------------*/
+  
+  .social-media {
+    margin: 20px 0;
+    padding-left: 60px; 
+  }
+  
+  .social-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 60px;
+  }
+  
+  .social-plataform {
+    display: flex; 
+    align-items: flex-start; 
+  }
+  
+  .conect {
+    margin-left: 10px; 
+    font-family:'Poppins', sans-serif ;
+  }
+
+  .social-connected{
+    font-family:'Poppins', sans-serif ;
+    font-style: italic;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0px;
+  
+    
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  .social-posts{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+  }
+  
+  .tiktok {
+    background-image: url('../assets/tiktok.png');
+  }
+  
+  .facebook {
+    background-image: url('../assets/face.png');
+  }
+  
+  .instagram {
+    background-image: url('../assets/instacolorido.png');
+  }
+  
+  .twitter {
+    background-image: url('../assets/xcolorido.png');
+  }
+  
+  .social-email {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .social-connected {
+    margin-top: 2px; 
+  }
+  
+  .social-posts {
+    margin-left: auto; 
+  }
+  
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+.stats {
+  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 20px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+   
+}
+
+.e-coins, .current-rank {
+  background-image: url('../assets/Fundocoin.png');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  color: #fff;
+  border-radius: 10px;
+  padding: 60px; 
+  width: 48%; 
+  max-width: 600px; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; 
+}
+
+.coin-icon, .rank-icon {
+  width: 50px; 
+  height: auto; 
+  object-fit: contain; 
+  margin-right: 20px;
+}
+
+.coin-icon {
+  /* corrigir imagens !!!! */
+  margin-right: 20px;
+  justify-content: start;
+}
+
+.rank-icon {
+/* corrigir imagens !!!! */
+  margin-left: 20px;
+}
+
+.coin-count, .rank-number {
+  font-size: 40px; /* Ajusta o tamanho do texto */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.e-coins p, .current-rank p {
+  font-size: 14px; /* Diminui o tamanho do texto */
+  margin: 5px 0;
+}
+
+.rank-text, .coin-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-size:20px;
+}
+
+.sub2{
+  font-weight: 800;
+}
+
+.e-coins-container {
+  margin-top: 200px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 600px;
+  background-image: url('../assets/fundomoedas.png');
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ccc;
+
+  
+}
+
+.image-placeholder {
+  width: 100%; /* Para centralizar a imagem */
+  margin: 0 auto 20px; /* Centraliza e adiciona margem embaixo */
+}
+
+.image-placeholder img {
+
+  width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.exchange-title {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.5; /* Melhor legibilidade */
+}
+
+
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+  
+ 
+  
+  @media (max-width: 600px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

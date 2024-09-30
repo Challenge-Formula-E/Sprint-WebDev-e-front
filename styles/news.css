@@ -1,0 +1,59 @@
+.news-page {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
+}
+
+h2 {
+  margin-top: 95px;
+}
+
+.titulo {
+  background-image: url(../assets/fundomoedas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+.noticia-section {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.noticia {
+    margin-left: 70px;
+}
+
+.piloto {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/piloto.png);
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    .news-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .news-section .image-container {
+      flex: 1;
+    }
+  
+    .news-section p {
+      flex: 1;
+    }
+}
+
+.p-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
