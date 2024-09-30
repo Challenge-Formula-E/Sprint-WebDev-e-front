@@ -39,7 +39,7 @@ function Home() {
         </section>
       </Link>
 
-      <section className="section highlights">
+      <section className="section highlights flex justify-center items-center">
         <h2>Highlights</h2>
         <p>Race Cut</p>
 
