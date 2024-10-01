@@ -1,6 +1,8 @@
 # Projeto de Propagação da Fórmula E
 Plataforma feita com o objetivo de popularizar o produto FORMULA E, nas redes socias. Atráves do incentivo a pessoas a se tornarem criadores de conteúdo sobre a FORMULA E, e assim fazer essa comunidade, de fãs de modernidade com velocidade, crescer!!
 
+**Como acessar?** Basta clicar no link no canto superior direito, e fazer o acesso. 
+
 ## Integrantes
 
 - Matheus Vinícius (RM555177)
