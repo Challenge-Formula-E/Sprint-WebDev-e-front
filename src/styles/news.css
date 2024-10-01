@@ -4,8 +4,14 @@
     background: linear-gradient(to bottom, #000 61%, #111 66%, #091587 72%, #0518C3 83%, #011AFE 88%);
   }
   
-  h2 {
+  .h2-news {
     margin-top: 95px;
+  }
+
+  .p-news {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d3d3d3;
   }
   .calendar-races{
     text-align: justify;
@@ -30,6 +36,23 @@
       margin-right: 100px;
       margin-left: 100px;
   }
+
+  .news-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    gap: 20px;
+  }
+
+  .news-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 100px;
+    gap: 20px;
+  }
+
   .noticia {
       margin-left: 70px;
   }
@@ -42,12 +65,20 @@
       background-position: center;
   }
   
-  @media (min-width: 768px) {
-      .news-section {
+  @media (max-width: 768px) {
+      .news-section, .news-section1 {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin: 0 10px;
         gap: 20px;
+      }
+
+      .noticia-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
       }
     
       .news-section .image-container {
@@ -56,6 +87,23 @@
     
       .news-section p {
         flex: 1;
+      }
+
+      .h2-news {
+        font-size: 1.5rem;
+      }
+      
+      .noticia{
+        margin: 0;
+      }
+  
+      .p-news {
+        font-size: 1rem;
+        margin: 0;
+      }
+      .piloto {
+        background-size: cover;
+        height: 200px;
       }
   }
   

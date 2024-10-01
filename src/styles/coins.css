@@ -261,8 +261,23 @@
   
  
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .e-coins, .current-rank {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .e-coins-container {
+      height: 100%;
+    }
+
+    .boxes{
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
