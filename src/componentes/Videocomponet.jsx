@@ -7,12 +7,12 @@ const videos = [
   {
     src: EpicOvertake,
     title: 'Epic Overtake Drama in Formula E Safety Car Moments',
-    description: 'Momento emocionante de uma ultrapassagem épica na Fórmula E, durante momentos do Safety Car.'
+    description: 'Exciting moment of an epic overtake in Formula E, during Safety Car moments. 🏎️💨'
   },
   {
     src: SebastianBuemi,
     title: 'Sebastian Buemi Claims Formula E Championship Victory!',
-    description: 'Sebastian Buemi vence o campeonato da Fórmula E com uma corrida incrível.'
+    description: 'Sebastian Buemi wins the Formula E championship with an incredible race. 🏎️🏆.'
   }
 ];
 
